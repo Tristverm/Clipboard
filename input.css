@@ -16,3 +16,22 @@ body {
         @apply bg-[url("/images/bg-header-mobile.png")] bg-contain bg-no-repeat
     }
 }
+.section-container{
+    @apply max-w-6xl mx-auto text-center px-10
+}
+.section-content{
+    @apply max-w-3xl mx-auto text-xl leading-9 text-center text-grayishBlue
+  
+}
+@layer base{
+    h3 {
+       @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl
+    }
+    h5 {
+        @apply mb-2 text-2xl font-bold text-darkGrayishBlue
+
+    }
+}
+/* .button-container {
+    @apply  p-4 px-8 hover:shadow-lg hover:shadow-strongCyan text-xl font-sans text-white rounded-full hover:-translate-y-2 duration-200 transition hover:opacity-90
+} */
