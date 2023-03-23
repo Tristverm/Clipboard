@@ -11,12 +11,50 @@
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="icon"
+      href="images/favicon_io/favicon-16x16.png"
+      type="image/svg+xml"
+    />
+
     <title>ClipBoard</title>
   </head>
-  <body>
+  <body class="relative">
+    <nav
+      class="bg-gray-50 fixed top-0 w-full z-10 bg-gradient-to-r from-lightBlue to-strongCyan"
+    >
+      <div class="section-container px-4">
+        <div class="flex items-center justify-between flex-row">
+          <!--image-->
+          <a href="#"
+            ><img src="images/logo.svg" alt="" class="scale-[50%]"
+          /></a>
+          <!--Login Signin and Features Container-->
+          <div
+            class="flex flex-row items-center justify-center space-x-4 font-bold"
+          >
+            <a
+              href="login.html"
+              class="inline-block hover:font-semibold border-white p-2 outline-none rounded-lg hover:border-b-4 duration-200"
+              ><h6>Login</h6></a
+            >
+            <a
+              href="#features"
+              class="inline-block hover:font-semibold border-white p-2 outline-none rounded-lg hover:border-b-4 duration-200"
+              ><h6>Features</h6></a
+            >
+            <a
+              href="login.html"
+              class="inline-block hover:font-semibold border-white p-2 outline-none rounded-lg hover:border-b-4 duration-200"
+              ><h6>Sign Up</h6></a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
     <!--Hero Section-->
     <section class="" id="hero">
-      <div class="section-container mb-40 pt-16">
+      <div class="section-container mb-40 pt-16 mt-44">
         <img src="images/logo.svg" alt="" class="mx-auto my-16" />
         <h3 class="">A history of everything you copy</h3>
         <p class="max-w-3xl mx-auto mb-10 text-2xl text-grayishBlue">
@@ -28,12 +66,12 @@
           class="mt-4 w-full flex flex-col justify-center items-center space-y-6 md:flex-row md:space-y-0 md:space-x-4"
         >
           <button
-            class="bg-strongCyan p-4 px-8 hover:shadow-lg hover:shadow-strongCyan text-xl font-sans text-white rounded-full hover:-translate-y-2 duration-200 transition hover:opacity-90"
+            class="bg-lightBlue p-4 px-8 hover:shadow-lg hover:shadow-lightBlue text-xl font-sans text-white rounded-full hover:-translate-y-2 duration-200 transition hover:opacity-90"
           >
             Download for IoS
           </button>
           <button
-            class="bg-lightBlue p-4 px-8 text-xl font-sans hover:shadow-lg hover:shadow-lightBlue text-white rounded-full hover:-translate-y-2 duration-200 transition hover:opacity-90"
+            class="bg-strongCyan p-4 px-8 text-xl font-sans hover:shadow-lg hover:shadow-strongCyan text-white rounded-full hover:-translate-y-2 duration-200 transition hover:opacity-90"
           >
             Download for Mac
           </button>
@@ -69,9 +107,7 @@
           >
             <!--Item1-->
             <div>
-              <h5 class="">
-                Quick Search
-              </h5>
+              <h5 class="">Quick Search</h5>
               <p class="max-w-md text-grayishBlue">
                 Easily Search your snippets by content, category, web address,
                 application, and more.
@@ -79,20 +115,16 @@
             </div>
             <!--Item2-->
             <div>
-              <h5 class="">
-                iCloud Sync
-              </h5>
+              <h5 class="">iCloud Sync</h5>
               <p class="max-w-md text-grayishBlue">
                 Instantly Saves and Syncs snippets across all your devices.
               </p>
             </div>
             <!--Item3-->
             <div>
-              <h5 class="">
-                Complete History
-              </h5>
+              <h5 class="">Complete History</h5>
               <p class="max-w-md text-grayishBlue">
-                Retrieve any snippets from the first moment you started yousing
+                Retrieve any snippets from the first moment you started you sing
                 the App
               </p>
             </div>
@@ -122,34 +154,163 @@
           We've got the tools to boost your productivity
         </p>
         <!--Items Container-->
-        <div class="flex flex-col items-center justify-between space-y-16 md:flex-row md:space-y-0 md:space-x-12">
+        <div
+          class="flex flex-col items-center justify-between space-y-16 md:flex-row md:space-y-0 md:space-x-12"
+        >
           <!--Items 1-->
-          <div class="flex flex-col items-center space-y-5">
-            <img src="images/icon-blacklist.svg" alt="">
+          <div
+            class="flex flex-col items-center space-y-5 hover:scale-110 duration-500 hover:translate-x-3"
+          >
+            <img src="images/icon-blacklist.svg" alt="" />
             <h5>Create Blacklist</h5>
             <p class="max-w-md text-grayishBlue">
               Easily Search your snippets by content, category, web address,
-                application, and more.
+              application, and more.
             </p>
           </div>
-          <!--Items 2-->
-          <div class="flex flex-col items-center space-y-5">
-            <img src="images/icon-text.svg" alt="">
+          <!-- Items 2 -->
+          <div
+            class="flex flex-col items-center space-y-5 hover:scale-110 duration-500 hover:translate-x-3"
+          >
+            <img src="images/icon-text.svg" alt="" />
             <h5>Plain Text Snippets</h5>
             <p class="max-w-md text-grayishBlue">
               Easily Search your snippets by content, category, web address,
-                application, and more.
+              application, and more.
             </p>
           </div>
           <!--Items 3-->
-          <div class="flex flex-col items-center space-y-5">
-            <img src="images/icon-preview.svg" alt="">
+          <div
+            class="flex flex-col items-center space-y-5 hover:scale-110 duration-500 hover:translate-x-3"
+          >
+            <img src="images/icon-preview.svg" alt="" />
             <h5>Sneek Preview</h5>
             <p class="max-w-md text-grayishBlue">
-              Quick Preview of allk Snippets on your Clipboard for easy access
+              Quick Preview of all Snippets on your Clipboard for easy access
             </p>
           </div>
+        </div>
       </div>
     </section>
+    <!--References section-->
+    <section class="group" id="references">
+      <h3 class="text-center p-6 m-2 group-hover:animate-pulse">
+        Our Trustees
+      </h3>
+      <div
+        class="group-hover: flex flex-col items-center justify-between max-w-6xl px-10 mx-auto space-y-16 mb-44 mt-10 md:flex-row md:space-y-0 md:space-x-4"
+      >
+        <img
+          src="images/logo-google.png"
+          class="group-hover: hover:scale-110 duration-500 hover:translate-x-3"
+          alt=""
+        />
+        <img
+          src="images/logo-ibm.png"
+          class="group-hover: hover:scale-110 duration-500 hover:translate-x-3"
+          alt=""
+        />
+        <img
+          src="images/logo-hp.png"
+          class="group-hover: hover:scale-110 duration-500 hover:translate-x-3"
+          alt=""
+        />
+        <img
+          src="images/logo-microsoft.png"
+          class="group-hover: hover:scale-110 duration-500 hover:translate-x-3"
+          alt=""
+        />
+        <img
+          src="images/logo-vector-graphics.png"
+          class="group-hover: hover:scale-110 duration-500 hover:translate-x-3"
+          alt=""
+        />
+      </div>
+    </section>
+    <!--Bottom CTA Section-->
+    <section>
+      <h3 class="text-center">Clipboard for iOS and Mac OS</h3>
+      <p
+        class="max-w-3xl mx-auto mb-24 text-xl leading-9 text-center text-grayishBlue"
+      >
+        Available for free on the Appstore, Download for MacOS or iOS, synch
+        with iCloud and you are ready to start adding to your Clipboard
+      </p>
+      <!--Button Container-->
+      <div
+        class="mt-4 mb-40 w-full flex flex-col justify-center items-center space-y-6 md:flex-row md:space-y-0 md:space-x-4"
+      >
+        <button
+          class="bg-lightBlue p-4 px-8 hover:shadow-lg hover:shadow-lightBlue text-xl font-sans text-white rounded-full hover:-translate-y-2 duration-200 transition hover:opacity-90"
+        >
+          Download for IoS
+        </button>
+        <button
+          class="bg-strongCyan p-4 px-8 text-xl font-sans hover:shadow-lg hover:shadow-strongCyan text-white rounded-full hover:-translate-y-2 duration-200 transition hover:opacity-90"
+        >
+          Download for Mac
+        </button>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer class="bg-gray-50 mt-40 w-full">
+      <div class="section-container">
+        <div class="flex flex-col items-center justify-between md:flex-row">
+          <!--image-->
+          <img src="images/logo.svg" alt="" class="scale-[50%]" />
+          <!--Container Menus and Socials-->
+          <div
+            class="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-grayishBlue"
+          >
+            <!--Menus-->
+            <div
+              class="flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-24 md:space-y-0 font-bold"
+            >
+              <!--Menu 1-->
+              <div
+                class="flex flex-col space-y-4 text-center md:text-left font-bold"
+              >
+                <div><a href="#" class="hover:text-strongCyan">FAQS</a></div>
+                <div>
+                  <a href="#" class="hover:text-strongCyan">Contact US</a>
+                </div>
+              </div>
+              <!--Menu 2-->
+              <div class="flex flex-col spacey-4 text-center md:text-left">
+                <div><a href="#" class="hover:text-strongCyan">Privacy</a></div>
+                <div>
+                  <a href="#" class="hover:text-strongCyan">Policy</a>
+                </div>
+              </div>
+              <!--Menu 3-->
+              <div class="flex flex-col spacey-4 text-center md:text-left">
+                <div>
+                  <a href="#" class="hover:text-strongCyan">Install Guide</a>
+                </div>
+              </div>
+            </div>
+            <!--Social-->
+            <div class="flex flex-row justify-between w-32 py-1">
+              <a href="#"
+                ><img
+                  src="images/icon-facebook.svg"
+                  alt=""
+                  class="duration-300 ficon" /></a
+              ><a href="#"
+                ><img
+                  src="images/icon-instagram.svg"
+                  alt=""
+                  class="duration-300 ficon" /></a
+              ><a href="#"
+                ><img
+                  src="images/icon-twitter.svg"
+                  alt=""
+                  class="duration-300 ficon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
