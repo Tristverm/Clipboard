@@ -1,4 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind variants;
+/* @tailwind variants; */
+
+
+body {
+ @apply bg-[url('/images/bg-header-desktop.png')] bg-contain bg-no-repeat;
+    /* background-image: url("/images/bg-header-desktop.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+}
+@media (max-width:576px){
+    body{
+
+        @apply bg-[url("/images/bg-header-mobile.png")] bg-contain bg-no-repeat
+    }
+}
